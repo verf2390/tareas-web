@@ -1,0 +1,19 @@
+{% extends 'base/principal.html' %}
+{% block content %}
+
+<div class="barra_superior">
+    <a href="{% url 'tareas' %}">&#x23CE;</a>
+</div>
+
+<div class="cuerpo_tarjeta">
+    <form method="POST">
+        {%csrf_token %}
+        <p>Estas seguro de que quieres eliminar la tarea "{{ tareas }}"?</p>
+        <input class="boton" type="submit" value="Eliminar" />
+    </form>
+
+</div>
+
+
+
+{% endblock content %}
