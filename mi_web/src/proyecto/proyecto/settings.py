@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*x--mhi@x(vt$z5@tob1md2&3)((uwsr@b+d(2+g&3jkz6uec3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.88']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.88', '192.168.1.83',]
 
 
 
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base.apps.BaseConfig',  # Asegúrate de que tu app se registre aquí'
+    'base.apps.BaseConfig',  # AsegÃºrate de que tu app se registre aquÃ­'
 ]
 
 MIDDLEWARE = [
@@ -114,7 +114,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-LOGIN_URL = 'login'  # URL para la vista de inicio de sesión
+LOGIN_URL = 'login'  # URL para la vista de inicio de sesiÃ³n
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
